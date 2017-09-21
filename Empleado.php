@@ -55,6 +55,29 @@ class Empleado extends Persona
 
         return $flag;
     }
+
+
+    public static function TraerEmpleados()
+    {
+
+        $lista= array();
+        $archivo= fopen("Archivos/empleados.txt", "r");
+        while(!feof($archivo))
+        {
+            $archAux = fgets($archivo);
+            $empleados = explode(" - ", $archAux);
+            $empleados[0] = trim($empleados[0]);
+
+            if($empleados[0]!="")
+            {
+                $lista[] = new Empleado ($empleados[0], $empleados[1], $empleados[2], $empleados[3], $empleados[4], $empleados[5]);
+            }
+        }
+
+        fclose($archivo);
+        return $lista;
+
+    }
 }
 
 

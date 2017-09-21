@@ -2,3 +2,5 @@ mariño - barbara - 35402822 - femenino - 10000 - 532 - El empleado habla Españ
 Islas - Facundo - 35329414 - masculino - 20000 - 187 - El empleado habla Español
 Islas - Nicolas - 1234554 - masculino - 150000 - 237 - El empleado habla Español
 Islas - Facundo - 35329414 - masculino - 20000  - 187 - El empleado habla Español
+Riquelme - Roberto - 89347837882 - masculino - 108922 - 001 - El empleado habla Español
+islas - mia - 44333111 - femenino - 15000 - 90 - El empleado habla Español
