@@ -44,7 +44,7 @@
 
      public function ToString()
      {
-        $cadena= $this->getApellido()."-".$this->getNombre()."-".$this->getDni()."-".$this->getSexo();
+        $cadena= $this->getApellido()." - ".$this->getNombre()." - ".$this->getDni()." - ".$this->getSexo();
         return $cadena;
 
      }

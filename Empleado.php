@@ -12,7 +12,7 @@ class Empleado extends Persona
     public function __construct($nombre, $apellido, $dni, $sexo, $legajo, $sueldo)
     {
         parent::__construct($nombre, $apellido, $dni, $sexo);
-        $this->legajo= $legajo;
+        $this->_legajo= $legajo;
         $this->_sueldo = $sueldo;
 
     }
@@ -38,11 +38,26 @@ class Empleado extends Persona
     public function ToString()
     {
 
-        $info = parent::ToString()."-".$this->Hablar("Español");
+        $info = parent::ToString()." - ".$this->getSueldo()." - ".$this->getLegajo()." - ".$this->Hablar("Español");
         return $info;
     }
 
+
+    public static function Guardar($empleado)
+    {
+        $flag = FALSE;
+        $archivo= fopen("Archivos/empleados.txt", "a+");
+        $cant = fwrite($archivo, $empleado->ToString()."\r\n");
+        if($cant>0)
+            $flag= TRUE;
+        
+        fclose($archivo);
+
+        return $flag;
+    }
 }
+
+
 
 
 ?>
