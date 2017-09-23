@@ -8,6 +8,7 @@ class Empleado extends Persona
 
     protected $_legajo;
     protected $_sueldo;
+    protected $_pathFoto;
 
     public function __construct($nombre, $apellido, $dni, $sexo, $legajo, $sueldo)
     {
@@ -15,6 +16,16 @@ class Empleado extends Persona
         $this->_legajo= $legajo;
         $this->_sueldo = $sueldo;
 
+    }
+
+    public function getPath()
+    {
+        return $this->_pathFoto;
+    }
+
+    public function setPath($foto)
+    {
+        $this->_pathFoto = $foto;
     }
 
     public function getLegajo()
@@ -38,7 +49,7 @@ class Empleado extends Persona
     public function ToString()
     {
 
-        $info = parent::ToString()." - ".$this->getSueldo()." - ".$this->getLegajo()." - ".$this->Hablar("Español");
+        $info = parent::ToString()." - ".$this->getSueldo()." - ".$this->getLegajo()." - ".$this->Hablar("Español")." - ".$this->getPath();
         return $info;
     }
 
@@ -67,13 +78,20 @@ class Empleado extends Persona
             $archAux = fgets($archivo);
             $empleados = explode(" - ", $archAux);
             $empleados[0] = trim($empleados[0]);
-
             if($empleados[0]!="")
             {
                 $lista[] = new Empleado ($empleados[0], $empleados[1], $empleados[2], $empleados[3], $empleados[4], $empleados[5]);
+                
+                foreach($lista as $value)
+                {
+                    $value->setPath($empleados[7]);
+                }
+                
+                
             }
+            
         }
-
+        
         fclose($archivo);
         return $lista;
 

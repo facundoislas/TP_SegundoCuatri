@@ -1,6 +1,6 @@
-mariño - barbara - 35402822 - femenino - 10000 - 532 - El empleado habla Español
-Islas - Facundo - 35329414 - masculino - 20000 - 187 - El empleado habla Español
-Islas - Nicolas - 1234554 - masculino - 150000 - 237 - El empleado habla Español
-Islas - Facundo - 35329414 - masculino - 20000  - 187 - El empleado habla Español
-Riquelme - Roberto - 89347837882 - masculino - 108922 - 001 - El empleado habla Español
-islas - mia - 44333111 - femenino - 15000 - 90 - El empleado habla Español
+pepa - Patricia - 77334433 - femenino - 15000 - 90 - El empleado habla Español - 77334433-pepa.jpg
+mariño - barbara - 99887766 - femenino - 15000 - 90 - El empleado habla Español - fotos/99887766-mariño.jpg
+argento - pepe - 99665523 - masculino - 15000 - 90 - El empleado habla Español - 99665523-argento.jpg
+argento1 - moni - 54323445 - masculino - 15000 - 90 - El empleado habla Español - 54323445-argento1.jpg
+valdez - rueba2 - 54321123 - masculino - 15000 - 90 - El empleado habla Español - 54321123-valdez.jpg
+valdez3 - rueba5 - 543345 - masculino - 1231 - 90 - El empleado habla Español - 543345-valdez3.jpg
